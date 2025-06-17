@@ -1,21 +1,17 @@
 import './index.css'
 
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-import Footer from './Footer.jsx';
+import Header from './Header.jsx';
 
 
 export default function App() {
     return (
         <>
             {/* will create header later */}
-            <div className='nav'>
-                <h1> My Page </h1>
-            </div>
-
+            <Header></Header>
             {/* Renders each page */}
             <Outlet />
-            <Footer><Link to='/Default'>Apps</Link><Link to='/'>Home</Link></Footer>
         </>
     )
 }

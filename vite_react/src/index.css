@@ -10,14 +10,21 @@
     }
 }
 
+/* Overall body re-colour */
 body{
     @apply bg-gray-700 p-0 m-0;
 }
 
-.nav{
-    @apply bg-gray-800 p-0 m-0 flex justify-center text-3xl border-y-2 border-gray-600;
+/* Main body block */
+.main-content{
+    @apply flex justify-center-safe items-center text-center m-0 p-10 bg-gray-900 text-cyan-200;
 }
 
-.main-content{
-    @apply flex justify-center m-0 p-10 bg-gray-900 text-cyan-200;
+
+.nav{
+    @apply bg-gray-800 p-0 m-0 text-center text-3xl right-0;
+}
+
+.header{
+    @apply flex justify-end;
 }
